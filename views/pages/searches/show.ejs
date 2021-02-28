@@ -8,5 +8,15 @@
 </head>
 <body>
     <p>This is search page </p>
+    
+     <% booksList.forEach(item =>{ %>
+         <div>
+             <img src=  <%= item.imgURL %>  alt= <%= item.title %>>
+             <h4> Author: <%= item.author %> </h4>
+             <h5> Title: <%= item.title %></h5>
+             <p> Description : <%= item.description %></p>
+         </div>
+     <% }) %>
+
 </body>
 </html>
